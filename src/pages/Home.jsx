@@ -160,6 +160,80 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Products Preview */}
+        <section className="py-24 px-margin-mobile md:px-margin-desktop bg-[#050505]">
+          <div className="max-w-container-max mx-auto text-center">
+            <h2 className="font-headline-xl text-white editorial-text mb-8">OUR FORMATS</h2>
+            <p className="font-body-lg text-white/60 font-light max-w-2xl mx-auto mb-16">
+              Precision-engineered hydration in volumes designed for every phase of your high-performance lifestyle.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              {[
+                { name: "The Daily", vol: "750ML" },
+                { name: "The Endurance", vol: "1L" },
+                { name: "The Compact", vol: "500ML" }
+              ].map((p, i) => (
+                <div key={i} className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
+                  <h3 className="text-display-sm text-primary mb-2">{p.vol}</h3>
+                  <p className="text-title-md text-white">{p.name}</p>
+                </div>
+              ))}
+            </div>
+            <Link to="/products" className="text-primary font-label-md flex items-center justify-center gap-2 hover:text-white transition-colors">
+              VIEW ALL PRODUCTS <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </Link>
+          </div>
+        </section>
+
+        {/* FAQ Preview */}
+        <section className="py-24 px-margin-mobile md:px-margin-desktop bg-[#080808] border-t border-white/5">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-between items-baseline mb-12">
+              <h2 className="font-headline-xl text-white editorial-text">COMMON QUESTIONS</h2>
+              <Link to="/faq" className="text-primary font-label-md flex items-center gap-2 hover:text-white transition-colors mt-4 md:mt-0">
+                VIEW ALL FAQ <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </Link>
+            </div>
+            <div className="space-y-4">
+              {[
+                { q: "What is alkaline water?", a: "Alkaline water has a higher pH level than regular drinking water, typically between 8 and 9." },
+                { q: "How much alkaline water should I drink?", a: "We recommend drinking 8-10 glasses (about 2 liters) of water daily." }
+              ].map((faq, i) => (
+                <div key={i} className="bg-white/5 border border-white/10 p-6 rounded-xl">
+                  <h4 className="text-title-md text-white mb-2">{faq.q}</h4>
+                  <p className="text-body-md text-white/60">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Blogs Preview */}
+        <section className="py-24 px-margin-mobile md:px-margin-desktop bg-background border-y border-white/5">
+          <div className="max-w-container-max mx-auto">
+            <div className="flex flex-col md:flex-row justify-between items-baseline mb-12">
+              <h2 className="font-headline-xl text-white editorial-text">LATEST INSIGHTS</h2>
+              <Link to="/blogs" className="text-primary font-label-md flex items-center gap-2 hover:text-white transition-colors mt-4 md:mt-0">
+                READ ALL BLOGS <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {[
+                { title: "The Science Behind Alkaline Water", date: "May 15, 2026" },
+                { title: "5 Ways to Stay Hydrated This Summer", date: "May 02, 2026" }
+              ].map((blog, i) => (
+                <div key={i} className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
+                  <span className="text-label-sm text-primary mb-2 block">{blog.date}</span>
+                  <h3 className="text-title-lg text-white mb-4">{blog.title}</h3>
+                  <Link to="/blogs" className="text-white/60 font-label-sm flex items-center gap-1 hover:text-white transition-colors">
+                    Read article <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Become a Partner Section (Understated luxury CTA) */}
         <section className="py-40 px-margin-mobile md:px-margin-desktop bg-[#030303] flex items-center justify-center text-center">
           <div className="max-w-2xl mx-auto flex flex-col items-center gap-10">

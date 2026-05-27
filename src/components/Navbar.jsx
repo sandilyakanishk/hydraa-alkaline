@@ -33,11 +33,22 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <NavLink to="/" className={linkClass}>Home</NavLink>
+            <NavLink to="/about" className={linkClass}>About</NavLink>
             <NavLink to="/products" className={linkClass}>Products</NavLink>
+            <NavLink to="/benefits" className={linkClass}>Benefits</NavLink>
+            <NavLink to="/faq" className={linkClass}>FAQ</NavLink>
+            <NavLink to="/blogs" className={linkClass}>Blogs</NavLink>
             <NavLink to="/contact" className={linkClass}>Contact</NavLink>
           </div>
 
           <div className="flex items-center gap-4">
+            <a
+              href="/partner"
+              className="hidden md:flex bg-white/10 text-white font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-white/20 transition-all duration-300 items-center gap-2"
+            >
+              <span className="material-symbols-outlined text-[18px]">handshake</span>
+              <span>Become a Partner</span>
+            </a>
             <a
               href="https://wa.me/916391862249"
               target="_blank"
@@ -84,24 +95,38 @@ export default function Navbar() {
           </div>
 
           {/* Centered Nav Links */}
-          <nav className="flex flex-col items-center gap-2 w-full px-8">
+          <nav className="flex flex-col items-center gap-2 w-full px-8 overflow-y-auto max-h-[50vh]">
             <NavLink to="/" className={mobileLinkClass} onClick={() => setIsOpen(false)}>Home</NavLink>
+            <NavLink to="/about" className={mobileLinkClass} onClick={() => setIsOpen(false)}>About</NavLink>
             <NavLink to="/products" className={mobileLinkClass} onClick={() => setIsOpen(false)}>Products</NavLink>
+            <NavLink to="/benefits" className={mobileLinkClass} onClick={() => setIsOpen(false)}>Benefits</NavLink>
+            <NavLink to="/faq" className={mobileLinkClass} onClick={() => setIsOpen(false)}>FAQ</NavLink>
+            <NavLink to="/blogs" className={mobileLinkClass} onClick={() => setIsOpen(false)}>Blogs</NavLink>
             <NavLink to="/contact" className={mobileLinkClass} onClick={() => setIsOpen(false)}>Contact</NavLink>
             <NavLink to="/legal" className={mobileLinkClass} onClick={() => setIsOpen(false)}>Legal</NavLink>
           </nav>
 
           {/* WhatsApp CTA at bottom */}
-          <a
-            href="https://wa.me/916391862249"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 flex items-center gap-3 border border-white/20 text-white px-8 py-4 rounded-full font-label-md text-label-md hover:bg-white/10 transition-all"
-            onClick={() => setIsOpen(false)}
-          >
-            <span className="material-symbols-outlined text-[20px]">chat</span>
-            Chat on WhatsApp
-          </a>
+          <div className="flex flex-col items-center gap-4 mt-8 w-full max-w-[300px]">
+            <a
+              href="/partner"
+              className="w-full flex justify-center items-center gap-3 bg-white/10 text-white px-8 py-4 rounded-full font-label-md text-label-md hover:bg-white/20 transition-all"
+              onClick={() => setIsOpen(false)}
+            >
+              <span className="material-symbols-outlined text-[20px]">handshake</span>
+              Become a Partner
+            </a>
+            <a
+              href="https://wa.me/916391862249"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex justify-center items-center gap-3 border border-white/20 text-white px-8 py-4 rounded-full font-label-md text-label-md hover:bg-white/10 transition-all"
+              onClick={() => setIsOpen(false)}
+            >
+              <span className="material-symbols-outlined text-[20px]">chat</span>
+              Chat on WhatsApp
+            </a>
+          </div>
         </div>
       )}
     </>

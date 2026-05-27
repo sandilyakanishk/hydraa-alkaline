@@ -2,7 +2,11 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Products from "./pages/Products";
+import Benefits from "./pages/Benefits";
+import FAQ from "./pages/FAQ";
+import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
 
@@ -16,7 +20,11 @@ export default function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/benefits" element={<Benefits />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/legal" element={<Legal />} />
             {/* Fallback route - redirect to Home */}
