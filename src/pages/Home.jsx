@@ -15,7 +15,7 @@ export default function Home() {
           {/* Background Video */}
           <video
             className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 mix-blend-screen pointer-events-none"
-            src="/hero-bg.mp4"
+            src={`${import.meta.env.BASE_URL}hero-bg.mp4`}
             autoPlay
             loop
             muted

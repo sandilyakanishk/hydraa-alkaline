@@ -14,7 +14,7 @@ export default function Products() {
       volume: "750ML",
       description: "The optimal volume for sustained hydration throughout your primary work cycle. Designed to sit elegantly on any desk.",
       chips: ["pH 8.5+", "Ionised", "Minerals"],
-      image: "/daily-bg.jpg",
+      image: `${import.meta.env.BASE_URL}daily-bg.jpg`,
       reverse: false
     },
     {
@@ -23,7 +23,7 @@ export default function Products() {
       volume: "1L",
       description: "Maximum capacity for intense physical training or extended travel. Uncompromising hydration reserves.",
       chips: ["pH 8.5+", "Electrolytes"],
-      image: "/endurance-bg.jpg",
+      image: `${import.meta.env.BASE_URL}endurance-bg.jpg`,
       reverse: true
     },
     {
@@ -32,7 +32,7 @@ export default function Products() {
       volume: "500ML",
       description: "Premium beachside and outdoor hydration. Perfectly formatted 500ml Compact vessel designed to sustain biological equilibrium during travel, sport, and lifestyle exploration.",
       chips: ["pH 8.5+", "Compact Format", "Electrolytes"],
-      image: "/compact-bg.jpg",
+      image: `${import.meta.env.BASE_URL}compact-bg.jpg`,
       reverse: true,
       scale: true
     }
