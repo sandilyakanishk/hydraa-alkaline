@@ -36,15 +36,15 @@ export default function Footer() {
 
           <div className="flex flex-col gap-4">
             <span className="font-label-md text-label-md text-primary tracking-widest uppercase mb-2">Legal</span>
-            <a href="#" className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200">
+            <Link to="/legal#privacy" className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200">
               Privacy Policy
-            </a>
-            <a href="#" className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200">
+            </Link>
+            <Link to="/legal#terms" className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200">
               Terms of Service
-            </a>
-            <a href="#" className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200">
+            </Link>
+            <Link to="/legal#lab-reports" className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200">
               Lab Reports
-            </a>
+            </Link>
           </div>
         </div>
       </div>

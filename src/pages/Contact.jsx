@@ -78,10 +78,6 @@ export default function Contact() {
 
   return (
     <div className="relative min-h-screen">
-      {/* Ambient background orbs */}
-      <div className="ambient-orb w-[600px] h-[600px] bg-primary-container top-[-10%] left-[-10%] pointer-events-none"></div>
-      <div className="ambient-orb w-[400px] h-[400px] bg-secondary-container bottom-[10%] right-[-5%] animation-delay-2000 pointer-events-none"></div>
-
       <main className="flex-grow pt-[120px] pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full relative z-10">
         
         {/* Hero Section */}
