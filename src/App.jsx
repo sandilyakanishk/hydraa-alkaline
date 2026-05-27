@@ -8,7 +8,7 @@ import Legal from "./pages/Legal";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/hydraa-alkaline">
       <div className="flex flex-col min-h-screen">
         <div className="noise-overlay"></div>
         <Navbar />
