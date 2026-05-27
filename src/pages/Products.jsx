@@ -85,6 +85,7 @@ export default function Products() {
                       src={product.image}
                       alt={`${product.name} ${product.volume} HYDRAA bottle.`}
                       className="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700 ease-out"
+                      loading="lazy"
                     />
                     {/* Gradient Overlay for High Text Contrast */}
                     <div className="absolute inset-0 bg-gradient-to-l from-background/95 via-background/70 to-transparent z-0 pointer-events-none"></div>
@@ -124,6 +125,7 @@ export default function Products() {
                       src={product.image}
                       alt={`${product.name} ${product.volume} HYDRAA bottle.`}
                       className="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700 ease-out"
+                      loading="lazy"
                     />
                     {/* Gradient Overlay for High Text Contrast */}
                     <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent z-0 pointer-events-none"></div>
@@ -163,6 +165,7 @@ export default function Products() {
                       alt={`${product.name} ${product.volume} HYDRAA bottle.`}
                       className={`h-full object-contain filter drop-shadow-[0_0_30px_rgba(176,198,255,0.15)] group-hover:scale-105 transition-transform duration-700 ease-out ${product.scale ? "scale-75 group-hover:scale-[0.8]" : ""}`}
                       src={product.image}
+                      loading="lazy"
                     />
                   </div>
 
